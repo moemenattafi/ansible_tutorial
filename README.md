@@ -1,2 +1,2 @@
 # ansible_tutorial
-testing if git push is working well
+Simple ansible project. This configuration is tested on a ubuntu VM.
