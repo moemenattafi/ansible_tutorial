@@ -6,6 +6,7 @@
   - name: updating indexes
     apt: 
         update_cache: yes
+    when: ansible_distribution == "CentOS"
 
   - name: install apache2 package
     apt:
