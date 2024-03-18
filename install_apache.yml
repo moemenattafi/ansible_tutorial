@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: true
+  tasks:
+
+  - name: updating indexes
+    apt: 
+        update_cache: yes
+
+  - name: install apache2 package
+    apt:
+      name: apache2

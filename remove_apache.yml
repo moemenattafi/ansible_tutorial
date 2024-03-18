@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: true
+  tasks:
+
+  - name: updating indexes
+    apt: 
+        update_cache: yes
+
+  - name: removing apache2 package
+    apt:
+      name: apache2
+      state: absent
